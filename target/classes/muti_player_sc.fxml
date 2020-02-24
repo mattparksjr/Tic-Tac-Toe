@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import codes.matthewp.tictactoe.ui.Cell?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.221" xmlns:fx="http://javafx.com/fxml/1" fx:controller="codes.matthewp.tictactoe.controller.CrlMultiGame">
+   <children>
+      <GridPane fx:id="gridPane" layoutX="150.0" layoutY="29.0" prefHeight="325.0" prefWidth="300.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Cell onMouseClicked="#mouseClick" onMouseEntered="#doHover" onMouseExited="#removeHover" prefHeight="175.0" prefWidth="176.0">
+               <children>
+                  <Text fx:id="cell1" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" wrappingWidth="100.234375">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Cell>
+            <Cell onMouseClicked="#mouseClick" onMouseEntered="#doHover" onMouseExited="#removeHover" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <children>
+                  <Text fx:id="cell2" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" wrappingWidth="100.234375">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Cell>
+            <Cell onMouseClicked="#mouseClick" onMouseEntered="#doHover" onMouseExited="#removeHover" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+               <children>
+                  <Text fx:id="cell3" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" wrappingWidth="100.234375">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Cell>
+            <Cell onMouseClicked="#mouseClick" onMouseEntered="#doHover" onMouseExited="#removeHover" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <Text fx:id="cell4" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" wrappingWidth="100.234375">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Cell>
+            <Cell onMouseClicked="#mouseClick" onMouseEntered="#doHover" onMouseExited="#removeHover" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Text fx:id="cell5" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" wrappingWidth="100.234375">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Cell>
+            <Cell onMouseClicked="#mouseClick" onMouseEntered="#doHover" onMouseExited="#removeHover" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <Text fx:id="cell6" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="borderAll" text="X" textAlignment="CENTER" wrappingWidth="100.234375">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Cell>
+            <Cell onMouseClicked="#mouseClick" onMouseEntered="#doHover" onMouseExited="#removeHover" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+               <children>
+                  <Text fx:id="cell7" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" wrappingWidth="100.234375">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Cell>
+            <Cell onMouseClicked="#mouseClick" onMouseEntered="#doHover" onMouseExited="#removeHover" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <Text fx:id="cell8" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="borderLR" text="X" textAlignment="CENTER" wrappingWidth="100.234375">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Cell>
+            <Cell onMouseClicked="#mouseClick" onMouseEntered="#doHover" onMouseExited="#removeHover" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <children>
+                  <Text fx:id="cell9" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="100.234375">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Cell>
+         </children>
+      </GridPane>
+      <Line endX="-100.0" endY="329.0" fill="BLACK" layoutX="350.0" layoutY="25.0" startX="-100.0" startY="5.0" strokeType="OUTSIDE" />
+      <Line endX="-100.0" endY="329.0" fill="BLACK" layoutX="450.0" layoutY="25.0" startX="-100.0" startY="5.0" strokeType="OUTSIDE" />
+      <Line endX="300.0" fill="BLACK" layoutX="150.0" layoutY="137.0" strokeType="OUTSIDE" />
+      <Line endX="300.0" fill="BLACK" layoutX="150.0" layoutY="245.0" startX="-0.0" strokeLineJoin="BEVEL" strokeType="OUTSIDE" />
+      <Text fx:id="winText" layoutX="209.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X wins the game!" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="resetBtn" layoutX="274.0" layoutY="2.0" mnemonicParsing="false" onMouseClicked="#doReset" styleClass="reset-button" text="Reset" />
+      <FontAwesomeIconView glyphName="CARET_LEFT" layoutY="387.0" onMouseClicked="#doTitleScreen" size="48" textAlignment="CENTER" wrappingWidth="44.999999552965164" />
+      <Label layoutX="14.0" layoutY="15.0" text="Wins:" underline="true">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="50.0" text="X: 0" fx:id="xWinsText">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="oWinsText" layoutX="14.0" layoutY="70.0" text="O: 0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="drawCountText" layoutX="14.0" layoutY="90.0" text="D: 0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+   <stylesheets>
+      <URL value="@/style.css" />
+   </stylesheets>
+</AnchorPane>
