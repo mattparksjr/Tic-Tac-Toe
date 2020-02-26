@@ -9,7 +9,9 @@
 <?import java.net.URL?>
 <AnchorPane prefHeight="344.0" prefWidth="292.0" styleClass="menu-bg" xmlns="http://javafx.com/javafx/8.0.221" xmlns:fx="http://javafx.com/fxml/1" fx:controller="codes.matthewp.tictactoe.controller.CrlAbout">
    <children>
-      <Label layoutX="17.0" layoutY="14.0" text="About Tic-Tac-Toe" textAlignment="CENTER" textFill="WHITE" underline="true">
+      <Label fx:id="aboutTitle" layoutX="17.0" layoutY="14.0"
+             text="About Tic-Tac-Toe" textAlignment="CENTER" textFill="WHITE"
+             underline="true">
          <font>
             <Font size="32.0" />
          </font>
@@ -18,8 +20,15 @@
             <String fx:value="menu-text" />
          </styleClass>
       </Label>
-      <Text layoutX="17.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu-text" text="Tic-Tac-Toe is a simple game, recreated in java FXML technologies. This game was created by Matthew Parks in order to learn more about java fxml, and how to better utilize the technology. The game is played with 2 players. The first player, or X, clicks a gird square. Then is the second players(O) turn. They click another cell in the grid. The ultimate goal is to get three of your chacters in a row. This can take place on rows, colums and even digonals. A score tracker on the side is kept to show how many wins each side has. If niether X or O are winners, and the board is full, a draw will be called. In a perfect game of Tic-Tac-Toe, it will always end in a draw." textAlignment="CENTER" wrappingWidth="260.999993622303" />
-      <Button layoutX="109.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#doClose" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="30.0" prefWidth="74.0" styleClass="menu-button" text="Back" />
+      <Text fx:id="aboutText" layoutX="17.0" layoutY="73.0" strokeType="OUTSIDE"
+            strokeWidth="0.0" styleClass="menu-text"
+            text="Tic-Tac-Toe is a simple game, recreated in java FXML technologies. This game was created by Matthew Parks in order to learn more about java fxml, and how to better utilize the technology. The game is played with 2 players. The first player, or X, clicks a gird square. Then is the second players(O) turn. They click another cell in the grid. The ultimate goal is to get three of your chacters in a row. This can take place on rows, colums and even digonals. A score tracker on the side is kept to show how many wins each side has. If niether X or O are winners, and the board is full, a draw will be called. In a perfect game of Tic-Tac-Toe, it will always end in a draw."
+            textAlignment="CENTER" wrappingWidth="260.999993622303"/>
+      <Button fx:id="aboutExit" layoutX="109.0" layoutY="300.0"
+              mnemonicParsing="false" onMouseClicked="#doClose"
+              onMouseEntered="#mouseEnter" onMouseExited="#mouseExit"
+              prefHeight="30.0" prefWidth="74.0" styleClass="menu-button"
+              text="Back"/>
    </children>
     <stylesheets>
        <URL value="@style.css"/>
