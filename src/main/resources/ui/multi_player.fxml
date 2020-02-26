@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
@@ -21,5 +22,9 @@
             <Font size="24.0" />
          </font>
       </Button>
+      <FontAwesomeIconView glyphName="CARET_LEFT" layoutY="387.0"
+                           onMouseClicked="#doTitleScreen" size="48"
+                           textAlignment="CENTER"
+                           wrappingWidth="44.999999552965164"/>
    </children>
 </AnchorPane>

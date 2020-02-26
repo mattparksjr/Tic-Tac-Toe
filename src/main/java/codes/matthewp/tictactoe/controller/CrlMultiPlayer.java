@@ -20,6 +20,11 @@ public class CrlMultiPlayer {
     }
 
     @FXML
+    public void doTitleScreen(MouseEvent event) {
+        GuiUtil.openNewWindow(((Node) (event.getSource())).getScene().getWindow(), "main_menu");
+    }
+
+    @FXML
     public void mouseEnter(MouseEvent event) {
         Button button = (Button) event.getTarget();
         button.getStyleClass().add("menu-button-hover");
