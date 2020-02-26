@@ -71,6 +71,11 @@ public class GuiUtil {
                 stage.setY(window.getY());
                 if (closeOld) {
                     window.hide();
+                    stage.setX(window.getX());
+                    stage.setY(window.getY());
+                } else {
+                    stage.setX(window.getX() + ((window.getWidth() - stage.getWidth()) / 2));
+                    stage.setY(window.getY() + ((window.getHeight() - stage.getHeight()) / 2));
                 }
             } else {
                 System.out.println("URL WAS NULL :(");
