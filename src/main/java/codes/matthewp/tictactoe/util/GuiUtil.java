@@ -2,7 +2,6 @@ package codes.matthewp.tictactoe.util;
 
 import codes.matthewp.tictactoe.TicTacToe;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -16,7 +15,7 @@ public class GuiUtil {
     public static void openNewWindow(Stage stage, String resourcePath) {
         Parent root;
         try {
-            URL url = GuiUtil.class.getResource("/" + resourcePath + ".fxml");
+            URL url = GuiUtil.class.getResource("/ui/" + resourcePath + ".fxml");
             if (url != null) {
                 root = FXMLLoader.load(url);
                 stage.setTitle(TicTacToe.lang.getString("title"));
@@ -36,7 +35,7 @@ public class GuiUtil {
     public static void openNewWindow(Window window, String resourcePath) {
         Parent root;
         try {
-            URL url = GuiUtil.class.getResource("/" + resourcePath + ".fxml");
+            URL url = GuiUtil.class.getResource("/ui/" + resourcePath + ".fxml");
             if (url != null) {
                 root = FXMLLoader.load(url);
                 Stage stage = new Stage();
@@ -60,7 +59,7 @@ public class GuiUtil {
     public static void openNewWindow(Window window, String resourcePath, double width, double height, boolean closeOld) {
         Parent root;
         try {
-            URL url = GuiUtil.class.getResource("/" + resourcePath + ".fxml");
+            URL url = GuiUtil.class.getResource("/ui/" + resourcePath + ".fxml");
             if (url != null) {
                 root = FXMLLoader.load(url);
                 Stage stage = new Stage();

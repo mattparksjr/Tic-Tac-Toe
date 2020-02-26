@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 
 public class TicTacToe extends Application {
 
-    public static final Image ICON_IMAGE = new Image("/icon.png");
+    public static final Image ICON_IMAGE = new Image("/img/icon.png");
 
     public static IFile lang;
     public static IFile config;
@@ -25,7 +25,7 @@ public class TicTacToe extends Application {
 
     public static void main(String[] args) {
         System.out.println("Starting Tic-Tac-Toe!");
-        lang = new IFile("en_us", true);
+        lang = new IFile("en_us", "/lang/", true);
         config = new IFile("settings", false);
         System.out.println("Files loaded. Loading networking parts...");
 
